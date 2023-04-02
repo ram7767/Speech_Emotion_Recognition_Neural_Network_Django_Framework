@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SER</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link ">Speech Emotion Recognition</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="homepage.html">Homepage</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="content.html">Content</a>
+        </li>
+    </ul>
+
+
+    <div class="grid text-center" style="--bs-rows: 3; --bs-columns: 3;">
+        <div>
+            <h1>Speech Emotion Recognition</h1><br>
+            <h5>With Nurel Network</h5>
+        </div>
+        <br>
+        <div class="g-start-3" style="grid-row: 3">
+          <form method="post" enctype="multipart/form-data" action="record">
+  
+            {% csrf_token %}
+          <svg xmlns="http://www.w3.org/2000/svg" width="25%" height="25%" fill="currentColor" class="bi bi-mic" viewBox="0 0 16 16">
+            <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+            <path d="M10 8a2 2 0 1 1-4 0V3a2 2 0 1 1 4 0v5zM8 0a3 3 0 0 0-3 3v5a3 3 0 0 0 6 0V3a3 3 0 0 0-3-3z"/>
+          </svg>
+          <button type="submit" class="btn btn-success">Predict Emotion</button><br>
+          <h5 style="color:brown; padding-top: 2%;">{{action}}</h5>
+          </form>
+        </div>
+    </div>
+</body>
+</html>
