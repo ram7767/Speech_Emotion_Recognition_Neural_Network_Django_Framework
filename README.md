@@ -3,9 +3,9 @@ A Deep learning project on the speech emotion recognition using neural networks 
 
 To run the project some python lybraries should be present. Those are :
 
-librosa.
-SpeechRecognisation 
-numpy
-sklearn
-soundfile
+librosa,
+SpeechRecognisation,
+numpy,
+sklearn,
+soundfile,
 Django
